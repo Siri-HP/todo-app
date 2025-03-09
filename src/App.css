@@ -1,0 +1,84 @@
+/* Default light mode */
+body {
+  background: linear-gradient(to right, #83a4d4, #b6fbff); /* Light mode gradient */
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background: #121212 !important; /* ✅ Remove gradient */
+  color: white;
+}
+
+/* Center heading */
+h1 {
+  text-align: center;
+  color: palevioletred;
+  padding: 20px;
+}
+
+/* Task container */
+.todo-container {
+  width: 50%;
+  margin: auto;
+  background: white; /* Light mode */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* ✅ Dark mode for task container */
+body.dark-mode .todo-container {
+  background: #1e1e1e;
+  color: white;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Buttons */
+button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #218838;
+}
+
+/* ✅ Dark mode for button */
+body.dark-mode button {
+  background: #444;
+}
+
+body.dark-mode button:hover {
+  background: #666;
+}
+
+.task-item {
+  background: white; /* Light mode background */
+  color: black; /* Light mode text */
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* ✅ Dark mode for task items */
+body.dark-mode .task-item {
+  background: #1e1e1e; /* Dark mode background */
+  color: WHITE; /* Dark mode text */
+}
